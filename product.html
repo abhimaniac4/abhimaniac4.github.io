@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Details</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href="product.css" rel="stylesheet">
+    <link href="homepage.css" rel="stylesheet">
+    <meta name="robots" content="noindex,follow" />
+
+  </head>
+
+  <body>
+
+  <!-- Nav bar -->
+
+    <header>
+      <div id="nav-placeholder">
+        </div>
+        <script>
+          $(function(){
+            $("#nav-placeholder").load("nav.html");
+          });
+          </script> 
+    </header>
+
+    <main class="container">
+
+      <!-- Left Column Image -->
+        
+      <div class="left-column">
+        <img data-image="black" src="images/Macbook.jpeg" alt="">
+        <img data-image="blue" src="images/Macbook.jpeg" alt="">
+        <img data-image="red" class="active img-fluid" src="images/Macbook.jpeg" alt="">
+      </div>
+
+      <!-- Right Column -->
+      <div class="right-column">
+
+        <!-- Product Description -->
+        <div class="product-description">
+          <span>Laptops</span>
+          <h1>Macbook Pro 13 inch</h1>
+          <p>New 13-inch model with faster performance and a new Magic Keyboard. Buy now. 2× the storage capacity. Up to 32GB of memory. Up to 10th-gen processors. 13-inch Retina display. Touch Bar and Touch ID. Services: 0% interest for 24 months, Free delivery.</p>
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+          <!-- Product Color -->
+          <div class="product-color">
+            <span>Color</span>
+
+            <div class="color-choose">
+              <div>
+                <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                <label for="red"><span></span></label>
+              </div>
+              <div>
+                <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                <label for="blue"><span></span></label>
+              </div>
+              <div>
+                <input data-image="black" type="radio" id="black" name="color" value="black">
+                <label for="black"><span></span></label>
+              </div>
+            </div>
+
+          </div>
+
+        <!-- Product Pricing -->
+        <div class="product-price">
+          <span>148$</span>
+          <a tabindex="0" class="btn btn-danger cart-btn" role="button" data-toggle="popover" data-trigger="focus" data-content="Added to cart successfully!">Add to cart</a>
+        </div>
+      </div>
+    </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container text-center">
+            <p>Copyright &copy; Indesign Furniture</p>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+      <!-- Scripts -->
+    <script src="product.js" charset="utf-8"></script>
+  </body>
+</html>

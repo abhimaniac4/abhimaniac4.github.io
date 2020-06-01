@@ -1,0 +1,55 @@
+body {
+  background: rgba(36, 36, 36, 1);
+  /* background: -webkit-linear-gradient(to right, #eecda3, #ef629f);
+  background: linear-gradient(to right, #eecda3, #ef629f); */
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  color: rgb(255, 255, 255);
+  background-color: rgba(36, 36, 36, 1);
+}
+.container {
+  max-width: 960px;
+}
+
+.lh-condensed {
+  line-height: 1.25;
+}
+
+.margin-container {
+  margin-top: 80px;
+}
+
+.text-colour {
+  color: rgb(222, 84, 30);
+}
+
+.navbar {
+  background-color: rgba(31, 31, 31, 0.75);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: rgb(222, 84, 30);
+  border-color: rgb(222, 84, 30);
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: rgb(222, 84, 30);
+  background-color: rgb(222, 84, 30);
+}
+
+.margin-previous {
+  margin-top: 100px;
+}
+
+.margin-left {
+  margin-left: 30px;
+}
+
+.btn-color {
+  background-color: rgb(222, 84, 30);
+  border-color: rgb(222, 84, 30);
+}
